@@ -14,7 +14,7 @@ const NearestLocationFinder = () => {
     const [nearestLocation, setNearestLocation] = useState(null);
     const [userLat, setUserLat] = useState(null);
     const [userLon, setUserLon] = useState(null);
-    const [mapLoaded, setMapLoaded] = useState(false); // New state variable to track map loading
+    const [mapLoaded, setMapLoaded] = useState(false); 
 
     useEffect(() => {
         const getUserLocation = () => {
@@ -70,12 +70,12 @@ const NearestLocationFinder = () => {
 
     useEffect(() => {
         if (userLat && userLon && nearestLocation) {
-            showMap(userLat, userLon); // Call showMap only when all necessary data is available
+            showMap(userLat, userLon); 
         }
     }, [userLat, userLon, nearestLocation]);
 
     const showMap = (lat, lon) => {
-        if (!mapLoaded) { // Check if map is not already loaded
+        if (!mapLoaded) { 
             const map = L.map('map').setView([lat, lon], 13);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -92,7 +92,7 @@ const NearestLocationFinder = () => {
                     .openPopup();
             }
 
-            setMapLoaded(true); // Set mapLoaded to true after the map is loaded
+            setMapLoaded(true); 
         }
     };
 

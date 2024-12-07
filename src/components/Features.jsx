@@ -2,7 +2,7 @@ import React from "react";
 import { FaCarAlt } from "react-icons/fa";
 import { LuAlarmClockOff } from "react-icons/lu";
 import { FaCcAmazonPay } from "react-icons/fa";
-const Featuresex = () => {
+const Features = () => {
   return (
     <div className="container">
       <h1 className="text-5xl text-center font-bold">How it works</h1>
@@ -42,4 +42,4 @@ const Featuresex = () => {
   );
 };
 
-export default Featuresex;
+export default Features;

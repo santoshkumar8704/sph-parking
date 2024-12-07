@@ -8,6 +8,7 @@ import Bgimage from "../Bgimage";
 import ParkingReceipt from "./ParkingReceipt";
 import VehicleDropDown from "../VehicleDropDown";
 import UserContext from "../../Context/UserContext";
+import ParkingReviews from "./ParkingReview";
 
 const bg2 = "https://wallpaperaccess.com/full/4327493.jpg";
 
@@ -66,7 +67,7 @@ const ParkingPage = () => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   };
-
+  const Reviews = ParkingReviews;
   const locations = ["Kakinada", "Hyderabad", "Vijayawada", "Rajahmundry"];
   const vehicleTypes = ["2 Wheeler", "4 Wheeler"];
   let bgcolor = "bg-orange-400";
@@ -106,8 +107,9 @@ const ParkingPage = () => {
 
   return (
     <div>
-      <div className="h-screen w-screen relative" style={style}>
-        <div className="container flex flex-col flex-end ml-[600px] pt-[40px]">
+      <div className="h-screen w-screen relative " style={style}>
+        
+        <div className="container flex flex-col pl-[600px] pt-[40px]">
           <h1 className="text-5xl font-bold text-white">Pick A location</h1>
           <p className="text-lg text-gray-400 mt-2">
             Book your slot in minutes

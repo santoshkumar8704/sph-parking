@@ -4,7 +4,7 @@ import Bgimage from "./Bgimage";
 import Slider from "./slider/Slider";
 import MissionSection from "./MissionSection";
 import { Link } from "react-router-dom";
-import Featuresex from "./Featuresex";
+import Features from "./Features";
 
 const HomePage = () => {
   const bg =
@@ -66,7 +66,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="my-10">
-          <Featuresex />
+          <Features />
         </div>
         <MissionSection />
         <div className="container ml-[200px] mt-20">
